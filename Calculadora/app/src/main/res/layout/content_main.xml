@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="mainapplication.com.calculadora.MainActivity"
+    tools:showIn="@layout/activity_main"
+    android:background="#151515">
+
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/gridLayout">
+
+        <Button
+            android:id="@+id/clear"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentTop="true"
+            android:layout_column="0"
+            android:layout_row="0"
+            android:text="C"
+            android:onClick="click"/>
+
+        <Button
+            android:id="@+id/dividido"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentTop="true"
+            android:layout_column="3"
+            android:layout_row="0"
+            android:text="%"
+            android:onClick="click"/>
+
+        <Button
+            android:id="@+id/sete"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentTop="true"
+            android:layout_column="0"
+            android:layout_row="1"
+            android:text="7"
+            android:onClick="click"/>
+
+        <Button
+            android:id="@+id/oito"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentTop="true"
+            android:layout_column="1"
+            android:layout_row="1"
+            android:text="8"
+            android:onClick="click"/>
+
+        <Button
+            android:id="@+id/nove"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentTop="true"
+            android:layout_column="2"
+            android:layout_row="1"
+            android:text="9"
+            android:onClick="click" />
+
+        <Button
+            android:id="@+id/vezes"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentTop="true"
+            android:layout_column="3"
+            android:layout_row="1"
+            android:text="*"
+            android:onClick="click"/>
+
+        <Button
+            android:id="@+id/quatro"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentTop="true"
+            android:layout_column="0"
+            android:layout_row="2"
+            android:text="4"
+            android:onClick="click" />
+
+        <Button
+            android:id="@+id/cinco"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentTop="true"
+            android:layout_column="1"
+            android:layout_row="2"
+            android:text="5"
+            android:onClick="click"/>
+
+        <Button
+            android:id="@+id/seis"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentTop="true"
+            android:layout_column="2"
+            android:layout_row="2"
+            android:text="6"
+            android:onClick="click"/>
+
+        <Button
+            android:id="@+id/menos"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentTop="true"
+            android:layout_column="3"
+            android:layout_row="2"
+            android:text="-"
+            android:onClick="click"/>
+
+        <Button
+            android:id="@+id/um"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentTop="true"
+            android:layout_column="0"
+            android:layout_row="3"
+            android:text="1"
+            android:onClick="click"/>
+
+        <Button
+            android:id="@+id/dois"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentTop="true"
+            android:layout_column="1"
+            android:layout_row="3"
+            android:text="2"
+            android:onClick="click" />
+
+        <Button
+            android:id="@+id/tres"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentTop="true"
+            android:layout_column="2"
+            android:layout_row="3"
+            android:text="3"
+            android:onClick="click" />
+
+        <Button
+            android:id="@+id/mais"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentTop="true"
+            android:layout_column="3"
+            android:layout_row="3"
+            android:text="+"
+            android:onClick="click"/>
+
+        <Button
+            android:id="@+id/zero"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentTop="true"
+            android:layout_column="0"
+            android:layout_row="4"
+            android:text="0"
+            android:onClick="click"/>
+
+        <Button
+            android:id="@+id/ponto"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentTop="true"
+            android:layout_column="2"
+            android:layout_row="4"
+            android:text="."
+            android:onClick="click"/>
+
+        <Button
+            android:id="@+id/igual"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentTop="true"
+            android:layout_column="3"
+            android:layout_row="4"
+            android:text="="
+            android:onClick="click"/>
+
+    </GridLayout>
+
+    <TextView
+        android:id="@+id/firstNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/resultado"
+        android:layout_alignEnd="@+id/gridLayout"
+        android:layout_alignRight="@+id/gridLayout"
+        android:textColor="#fff"
+        android:textSize="20dp"
+        android:text=""
+        android:layout_marginBottom="5dp"/>
+
+    <TextView
+        android:id="@+id/resultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/gridLayout"
+        android:layout_alignEnd="@+id/gridLayout"
+        android:layout_alignRight="@+id/gridLayout"
+        android:textColor="#fff"
+        android:textSize="50dp"
+        android:text="0"
+        android:layout_marginBottom="10dp"/>
+
+</RelativeLayout>

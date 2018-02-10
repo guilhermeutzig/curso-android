@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_below="@+id/topToolbar">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/colorPrimary"
+        android:paddingTop="50dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="20dp">
+
+        <RelativeLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:id="@+id/topRow"
+            android:layout_marginTop="25dp">
+
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="200px"
+                android:layout_height="200px"
+                app:srcCompat="@drawable/logo"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="15dp"/>
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gravar dados"
+                android:textSize="@dimen/title_font"
+                android:textColor="@color/colorWhite"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/logo"/>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_below="@id/topRow"
+            android:paddingBottom="50dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:textAlignment="center"
+                android:textSize="25dp"
+                android:text="Campos a serem lembrados mesmo com app fechado"
+                android:textColor="@color/colorWhite"
+                android:id="@+id/textSame"/>
+
+            <EditText
+                android:id="@+id/nameToRemember"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textSame"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:inputType="textPersonName"
+                android:hint="Nome"
+                android:textColorHint="@color/colorWhite"
+                android:textColor="@color/colorWhite"/>
+
+            <EditText
+                android:id="@+id/ageToRemember"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/nameToRemember"
+                android:layout_marginTop="5dp"
+                android:layout_centerHorizontal="true"
+                android:inputType="number"
+                android:hint="Idade"
+                android:textColorHint="@color/colorWhite"
+                android:textColor="@color/colorWhite"/>
+
+            <Button
+                android:id="@+id/buttonToRemember"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ageToRemember"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/top_margin"
+                android:text="Gravar Dados" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/buttonToRemember"
+                android:textSize="18dp"
+                android:layout_marginTop="10dp"
+                android:textAlignment="center"
+                android:text="Preencha os dados acima"
+                android:textColor="@color/colorWhite"
+                android:id="@+id/resultToRemember"/>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</ScrollView>

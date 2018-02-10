@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/colorPrimary"
+        android:paddingTop="50dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="20dp">
+
+        <RelativeLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:id="@+id/headerIMC"
+            android:layout_marginTop="25dp">
+
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="200px"
+                android:layout_height="200px"
+                app:srcCompat="@drawable/logo"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="15dp"/>
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Calcular IMC"
+                android:textSize="@dimen/title_font"
+                android:textColor="@color/colorWhite"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/logo"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/pesoBlock"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/headerIMC"
+            android:layout_marginTop="@dimen/top_margin">
+
+            <TextView
+                android:id="@+id/textPeso"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Peso"
+                android:textSize="@dimen/main_font"
+                android:textColor="@color/colorWhite"
+                android:layout_marginRight="15dp"
+                android:layout_centerVertical="true"/>
+
+            <EditText
+                android:id="@+id/inputPeso"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/textPeso"
+                android:hint="Digite seu peso"
+                android:inputType="numberDecimal"
+                android:textColor="@color/colorWhite"
+                android:textColorHint="@color/colorWhite" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/alturaBlock"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pesoBlock"
+            android:layout_marginTop="@dimen/top_margin">
+
+            <TextView
+                android:id="@+id/textAltura"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Altura"
+                android:textSize="@dimen/main_font"
+                android:textColor="@color/colorWhite"
+                android:layout_marginRight="15dp"
+                android:layout_centerVertical="true"/>
+
+            <EditText
+                android:id="@+id/inputAltura"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:hint="Digite sua altura"
+                android:layout_toRightOf="@+id/textAltura"
+                android:textColor="@color/colorWhite"
+                android:textColorHint="@color/colorWhite" />
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/calcularImc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/alturaBlock"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/top_margin"
+            android:text="Calcular" />
+
+        <Button
+            android:id="@+id/backHomeBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/calcularImc"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/top_margin"
+            android:text="Voltar para o Início" />
+
+        <TextView
+            android:id="@+id/parameterText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/backHomeBtn"
+            android:text="Texto de parâmetro"
+            android:textSize="@dimen/main_font"
+            android:textColor="@color/colorWhite"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/top_margin"/>
+
+
+    </RelativeLayout>
+
+</ScrollView>

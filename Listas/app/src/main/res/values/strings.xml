@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Listas</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_descriptions_lists">DescriptionsLists</string>
+</resources>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Primeiro App</string>
+    <string name="action_settings">Configurações</string>
+    <string name="title_activity_calculo_imc">CalculoImc</string>
+    <string name="title_activity_tela_principal">TelaPrincipal</string>
+    <string name="title_activity_entender_sql">EntenderSQLActivity</string>
+    <string name="title_activity_gravar_dados">GravarDadosActivity</string>
+</resources>

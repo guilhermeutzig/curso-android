@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#151515"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="mainapplication.com.quizz.MainActivity"
+    tools:showIn="@layout/activity_main"
+    android:paddingTop="30dp"
+    android:paddingBottom="30dp"
+    android:paddingLeft="30dp"
+    android:paddingRight="30dp">
+
+
+    <TextView
+        android:id="@+id/questionText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Pergunta"
+        android:textColor="#ffffff" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/questionText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp" >
+
+        <RadioButton
+            android:id="@+id/optionA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="RadioButton"
+            android:textColor="#ffffff"
+            android:layout_marginBottom="5dp"/>
+
+        <RadioButton
+            android:id="@+id/optionB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="RadioButton"
+            android:textColor="#ffffff"
+            android:layout_marginBottom="5dp"/>
+
+        <RadioButton
+            android:id="@+id/optionC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="RadioButton"
+            android:textColor="#ffffff"
+            android:layout_marginBottom="5dp"/>
+    </RadioGroup>
+
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/btnOk"
+        android:layout_below="@+id/radioGroup"
+        android:layout_centerHorizontal="true"
+        android:text="OK"
+        android:layout_marginTop="40dp"
+        android:enabled="false"
+        android:onClick="atualizaPerguntas"/>
+
+</RelativeLayout>

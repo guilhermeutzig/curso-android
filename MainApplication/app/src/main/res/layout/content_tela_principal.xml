@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_below="@+id/topToolbar">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/colorPrimary"
+        android:paddingTop="50dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="80dp">
+
+        <RelativeLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:id="@+id/topRow"
+            android:layout_marginTop="25dp">
+
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="200px"
+                android:layout_height="200px"
+                app:srcCompat="@drawable/logo"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="15dp"/>
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bem-vindo ao meu app!"
+                android:textSize="@dimen/title_font"
+                android:textColor="@color/colorWhite"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/logo"/>
+
+        </RelativeLayout>
+
+
+        <Button
+            android:id="@+id/meuBotao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/top_margin"
+            android:text="Teste de Toast e Snackbar"
+            android:layout_below="@+id/topRow"
+            android:layout_centerHorizontal="true"
+            android:onClick="clicouBotao"/>
+
+        <Button
+            android:id="@+id/idadeTeste"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/top_margin"
+            android:text="Teste de idade"
+            android:layout_below="@+id/meuBotao"
+            android:layout_centerHorizontal="true"
+            android:onClick="clicouBotao"/>
+
+        <Button
+            android:id="@+id/entenderSQLHref"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/idadeTeste"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/top_margin"
+            android:text="Entendendo SQLite" />
+
+        <Button
+            android:id="@+id/loadImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/entenderSQLHref"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/top_margin"
+            android:text="Carregar Imagem" />
+
+        <ImageView
+            android:id="@+id/loadedImage"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/loadImage"
+            />
+
+        <Button
+            android:id="@+id/calcularImcHref"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/loadedImage"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/top_margin"
+            android:text="Calcular IMC" />
+
+        <Button
+            android:id="@+id/gravarDadosHref"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/calcularImcHref"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/top_margin"
+            android:text="Tela de gravamento de dados" />
+
+
+    </RelativeLayout>
+
+</ScrollView>
